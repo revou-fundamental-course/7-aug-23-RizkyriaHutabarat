@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KalMat Segitiga</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/cotton/64/calculator-checked.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header-left">
+        <a href="#"><img width="60" height="60" src="https://img.icons8.com/cotton/64/calculator-checked.png" alt="calculator-checked" class="left-icon" /></a>
+        <h1>KalMat<span> Kalkulator Matematik Segitiga</span></h1>
+      </div>
+      <img width="45" height="45" class="right-icon" src="https://img.icons8.com/dotty/80/menu--v2.png" alt="menu" />
+    </header>
+
+    <!-- Main -->
+    <main>
+      <section class="main-section animate__animated animate__zoomIn">
+        <div class="main-section-content">
+          <h2>Hi, Selamat datang di Website KalMat Segitiga!!</h2>
+          <p>Sebuah website yang digunakan untuk menghitung nilai luas dan keliling segitiga.</p>
+          <br />
+          <p>Semoga dapat membantu.</p>
+          <br />
+          <p>Silakan Klik button di bawah untuk mencoba</p>
+        </div>
+
+        <!-- Navigation Button -->
+        <div class="main-section-nav">
+          <ul>
+            <li>
+              <a class="luas-segitiga" href="#luas-segitiga-section">Luas segitiga</a>
+            </li>
+            <li>
+              <a class="keliling-segitiga" href="#keliling-segitiga-section">Keliling segitiga</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Luas segitiga Section -->
+      <section class="luas-segitiga-section" id="luas-segitiga-section">
+        <div class="segitiga-content">
+          <h3 class="segitiga-title">Luas Segitiga</h3>
+          <div class="segitiga-img"></div>
+          <p>Rumus luas segitiga yaitu:</p>
+          <p>L = (A X T) / 2</p>
+          <p>Dimana:</p>
+          <p>L = Luas</p>
+          <p>A = Alas</p>
+          <p>T = Tinggi</p>
+        </div>
+        <div class="hitung-luas-segitiga-section">
+          <h3 class="segitiga-title">Hitung Luas Segitiga</h3>
+          <form action="">
+            <input type="number" id="input-sisi-luas" placeholder="Masukkan nilai Alas" required />
+            <input type="number" id="input-sisi-luas1" placeholder="Masukkan nilai Tinggi" required />
+            <div class="hasil-luas-segitiga-content" id="hasil-luas-segitiga-content">
+              <p id="rumus-hitung-luas"></p>
+              <p id="rumus-luas"></p>
+              <p id="hasil-luas"></p>
+            </div>
+            <button type="button" id="btn-hitung-luas" class="btn-hitung" onclick="hitungLuas()">Hitung Luas</button>
+            <button type="button" id="btn-reset-hitung-luas" class="btn-reset" onclick="resetLuas()">Reset</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Keliling segitiga Section -->
+      <section class="keliling-segitiga-section" id="keliling-segitiga-section">
+        <div class="segitiga-content">
+          <h3 class="segitiga-title">Keliling Segitiga</h3>
+          <div class="segitiga-img"></div>
+          <p>Rumus keliling segitiga yaitu:</p>
+          <p>K = A + B + C</p>
+          <p>Dimana:</p>
+          <p>A = Sisi A</p>
+          <p>B = Sisi B</p>
+          <p>C = Sisi C</p>
+        </div>
+        <div class="hitung-keliling-segitiga-section">
+          <h3 class="segitiga-title">Hitung Keliling Segitiga</h3>
+          <form action="">
+            <input type="number" id="input-sisi-kelilingA" placeholder="Masukkan nilai sisi A" required />
+            <input type="number" id="input-sisi-kelilingB" placeholder="Masukkan nilai sisi B" required />
+            <input type="number" id="input-sisi-kelilingC" placeholder="Masukkan nilai sisi C" required />
+            <div class="hasil-keliling-segitiga-content">
+              <p id="rumus-hitung-keliling"></p>
+              <p id="rumus-keliling"></p>
+              <p id="hasil-keliling"></p>
+            </div>
+            <button type="button" id="btn-hitung-keliling" class="btn-hitung" onclick="hitungKeliling()">Hitung Keliling</button>
+            <button type="button" id="btn-reset-hitung-keliling" class="btn-reset" onclick="resetKeliling()">Reset</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- End of Main -->
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        Coded by
+        <a href="https://github.com/RizkyriaHutabarat/" target="_blank">Rizkyria Hutabarat</a>
+        <a href="https://www.facebook.com/">Facebook</a>
+        <a href="https://www.instagram.com/rizkyria_hutabarat18">Instagram</a>
+      </p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
